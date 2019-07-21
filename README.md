@@ -46,7 +46,6 @@ Slides are availabe [here](https://docs.google.com/presentation/d/1ws-UiBxvEWOaI
     ```Bash
         $ flutter run --release
     ```
-=======
 
 ## Welcome to NodejsServer, Ganache-cli and IPFS installation
 NodeJS server is hosted in AWS. A virtual Ethereum blockchain is setup using Ganache-cli by node module Ganache-Cli.
