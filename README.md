@@ -138,11 +138,3 @@ $ npm install
 $ node index.js
 
 ```
-
-
-
-
-
-
-
->>>>>>> 2cc968e02f6be3d27706b5ffe7426882f524f39f
