@@ -138,3 +138,64 @@ $ npm install
 $ node index.js
 
 ```
+
+## Deploy Node.js server on AWS
+- [x] Create an AWS account
+- [x] Select EC2 instance from Services dropdown, click on Launch Instance and select Free Tier Only.
+- [x] Select Linux AMI and then, on the next screen, select t2.micro (highlighted as Free tier eligible)
+- [x] Select Review and Launch. Ignoring the security warning and click Launch.
+- [x] Follow the instances to create a custom name key pair and store in somewhere on your PC where you can access it later.
+- [x] Select Launch Instances. You can select View Instances to go to the EC2 dashboard where you will see the instance up and running.
+- [x] You will be assigned a Public DNS and an IPv4 Public IP
+- [x] Now, ssh into your instance(For windows, use PuTTy). You can click the Connect button and select a standalone SSH client. Then, run the example code in your terminal.
+- [x] Now you are in your instance and run the following code to install NVM (Node Version Manager).
+```Bash 
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+```
+- [x] Ignore the **command not found** error and install node using
+*nvm install node*
+- [x] Install git and then,
+```Bash
+$ sudo yum install git
+$ git clone https://github.com/Electrocoders/Li-chain.git <folder-name>
+$ cd <folder-name>
+$ npm install
+$ npm start
+ ```
+ - [x] Go to Security Groups and click Inbound. Add a **new custom TCP rule** with port range **3000** and accessible from everywhere(0.0.0.0/0)
+ - [x] To keep the app running when you terminate your ssh, use
+ ```Bash killall -9 node
+ $ npm install pm2 -g
+ $ screen
+ $ pm2 start index.js
+ $ pm2 startup
+ $ pm2 save
+ ```
+ - [x] Press Ctrl-A then, Ctrl-D.
+ - [x] To move the app to port 80, use
+ ```Bash 
+ $ sudo yum install nginx
+ ```
+  - [x] Go to Security Groups and click Inbound. Add a **HTTP** with port range **80** and accessible from everywhere(0.0.0.0/0)
+ ```Bash 
+ $ sudo nano /etc/nginx/nginx.conf
+ ```
+ - [x] If there’s no server block listening on port 80, add one or change it if it already exists to look like this:
+ ```Bash
+ server {
+   listen         80 default_server;
+   listen         [::]:80 default_server;
+   server_name    localhost;
+   root           /usr/share/nginx/html;   location / {
+       proxy_pass http://127.0.0.1:3000;
+       proxy_http_version 1.1;
+       proxy_set_header Upgrade $http_upgrade;
+       proxy_set_header Connection 'upgrade';
+       proxy_set_header Host $host;
+       proxy_cache_bypass $http_upgrade;
+   }
+}
+ ```
+ ```Bash
+ $ sudo service nginx restart
+ $ sudo chkconfig nginx on
