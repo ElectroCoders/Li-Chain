@@ -28,3 +28,18 @@ Registration Form Website
 - [Nishesh Awale](https://www.github.com/nisheshawale)
 - [Anish Dulal](https://www.github.com/anishdulal)
  
+## To run the Flutter app
+
+ - Install directly from the apk in the root of this repository i.e. [Dapp](license_issue_Dapp.apk) and [Fraud Detector](fraud_detector_app.apk).
+ - Make sure [Flutter](https://flutter.dev/) is installed correctly.
+ - To run the License Issue app navigate to [license_issue_Dapp](https://github.com/ElectroCoders/Li-Chain/tree/master/license_issue_Dapp) :
+    - run the command
+    ```Bash
+        $ flutter run --release
+    ```
+    
+- To run the License Issue app navigate to [fraud_detector_app](https://github.com/ElectroCoders/Li-Chain/tree/master/fraud_detector_app) :
+  - run the command
+    ```Bash
+        $ flutter run --release
+    ```
