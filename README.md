@@ -5,6 +5,7 @@
 1. Eradicate Corruption by making transactions transparent and immutable.
 2. Detect Fraud License.
 3. Reduce long and tiresome queues outside the transportation authority.
+4. Strong security using Blockchain.
 
 The project can be divided into 5 parts:
 
