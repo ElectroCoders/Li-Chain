@@ -20,7 +20,7 @@ The project can be divided into 5 parts:
 | ![Screenshot1](https://user-images.githubusercontent.com/29589003/61585845-aba18480-ab85-11e9-8214-3ffdac816489.png) | ![Screenshot2](https://user-images.githubusercontent.com/29589003/61585830-54031900-ab85-11e9-9db4-4ec6c32a16ee.png) |
 
 Registration Form Website
-![Website](https://onepointsolutions.com.au/wp-content/uploads/2019/05/web-design-brisbane-qld-australia-onepoint-software-solutions.jpg)
+![Website](https://user-images.githubusercontent.com/29304788/61586071-08536e00-ab8b-11e9-9c09-959e20a15dc6.png)
 
 ## Team Members
 - [Mitesh Pandey](https://www.github.com/davidmitesh)
