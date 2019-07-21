@@ -9,7 +9,7 @@
 
 The project can be divided into 5 parts:
 
-- [x] [Ethereum](https://www.ethereum.org/) based Block Chain
+- [x] [Ethereum](https://www.ethereum.org/) based Blockchain
 - [x] Database hosting with [IPFS](https://ipfs.io/) - the Distributed Web.
 - [x] [NodeJS](https://nodejs.org/) server implementation in [AWS](https://aws.amazon.com/).
 - [x] Website to register for license
