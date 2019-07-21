@@ -22,6 +22,8 @@ The project can be divided into 5 parts:
 Registration Form Website
 ![Website](https://user-images.githubusercontent.com/29304788/61586071-08536e00-ab8b-11e9-9c09-959e20a15dc6.png)
 
+Slides are availabe [here](https://docs.google.com/presentation/d/1ws-UiBxvEWOaIDOfpUQeOAC3MUrbxg_HHymqrwen7Mo/edit?usp=sharing).
+
 ## Team Members
 - [Mitesh Pandey](https://www.github.com/davidmitesh)
 - [Bibek Timsina](https://www.github.com/bimsina)
